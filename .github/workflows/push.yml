@@ -45,7 +45,7 @@ jobs:
         run: ~/.elan/bin/lake -Kenv=dev build Project
 
       - name: Cache mathlib documentation
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: |
             .lake/build/doc/Init

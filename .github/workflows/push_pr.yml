@@ -24,7 +24,7 @@ jobs:
     name: Build project
     steps:
       - name: Checkout project
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Fetch all history for all branches and tags
 

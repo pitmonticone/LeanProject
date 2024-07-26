@@ -1,3 +1,3 @@
 # ForMathlib
 
-Write a description here.
+This folder contains `.lean` files with new declarations to be upstreamed to Mathlib.

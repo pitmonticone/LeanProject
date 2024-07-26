@@ -1,24 +1,11 @@
+name: Pull Request
 # Trigger the workflow on pull request events
 on:
   pull_request:
+    branches: ["main"] # Trigger on pull requests targeting the "main" branch (replace "main" with your default branch if different)
+  workflow_dispatch: # Allow manual triggering of the workflow from the GitHub Actions interface
 
 jobs:
-  style_lint:
-    name: Lint style
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check for long lines
-        if: always()
-        run: |
-          # Find Lean files with lines longer than 100 characters, excluding URLs
-          ! (find Project -name "*.lean" -type f -exec grep -E -H -n '^.{101,}$' {} \; | grep -v -E 'https?://')
-
-      - name: Don't 'import Mathlib', use precise imports
-        if: always()
-        run: |
-          # Ensure no file imports the entire Mathlib, promoting precise imports instead
-          ! (find Project -name "*.lean" -type f -print0 | xargs -0 grep -E -n '^import Mathlib$')
-
   build_project:
     runs-on: ubuntu-latest
     name: Build project
@@ -29,7 +16,7 @@ jobs:
           fetch-depth: 0  # Fetch all history for all branches and tags
 
       - name: Install elan
-        run: curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y --default-toolchain none
+        run: curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y
 
       - name: Get cache
         run: ~/.elan/bin/lake exe cache get

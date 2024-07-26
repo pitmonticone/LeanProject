@@ -1,19 +1,15 @@
 # Specify the Docker image to use for the Gitpod workspace
-image:
-  # Path to the Dockerfile used to build the custom image
-  file: .docker/gitpod/Dockerfile
+image: leanprovercommunity/mathlib:gitpod
 
-# VS Code configuration settings
+# Configure VS Code settings
 vscode:
   extensions:
-    # Extension for Lean 4 support
-    - leanprover.lean4
+    - leanprover.lean4  # Lean 4 support extension for VS Code
 
 # Define tasks to run in the Gitpod workspace
 tasks:
-  # Initial task to run when the workspace starts
-  - init: 
-      # Retrieve and cache dependencies using Lake (Lean's package manager)
-      lake exe cache get 
-      # Build the project and include the LeanSchool.Common package
-      lake build +LeanSchool.Common
+  - init: |
+      # Update elan (Lean toolchain manager) to the latest version
+      elan self update
+      # Retrieve and cache the latest Mathlib dependencies
+      lake exe cache get

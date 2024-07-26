@@ -1,0 +1,30 @@
+name: Lint Style
+
+on: 
+    push:
+       branches: ["main"] # Trigger on pushes to the "main" branch (replace "main" with your default branch if different)
+    pull_request:
+       branches: ["main"] # Trigger on pull requests targeting the "main" branch (replace "main" with your default branch if different)
+    workflow_dispatch:   # Allow manual triggering of the workflow from the GitHub Actions interface
+
+# Set permissions for the workflow
+permissions:
+    contents: read  # Read access to repository contents
+    pages: write    # Write access to GitHub Pages
+    id-token: write # Write access to ID tokens
+
+jobs:
+  style_lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for long lines
+        if: always()
+        run: |
+          # Find Lean files with lines longer than 100 characters, excluding URLs
+          ! (find Project -name "*.lean" -type f -exec grep -E -H -n '^.{101,}$' {} \; | grep -v -E 'https?://')
+
+      - name: Don't 'import Mathlib', use precise imports
+        if: always()
+        run: |
+          # Ensure no file imports the entire Mathlib, promoting precise imports instead
+          ! (find Project -name "*.lean" -type f -print0 | xargs -0 grep -E -n '^import Mathlib$')

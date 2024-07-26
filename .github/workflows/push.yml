@@ -122,7 +122,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1  # Deploy the site to GitHub Pages
+        uses: actions/deploy-pages@v4  # Deploy the site to GitHub Pages
 
       - name: Make sure the cache works
         run: mv docs/docs .lake/build/doc  # Verify that the cache is functioning correctly

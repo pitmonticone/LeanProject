@@ -1,0 +1,17 @@
+{
+    // Learn about workspace recommendations at:
+    // https://go.microsoft.com/fwlink/?LinkId=827846
+
+    // The extension identifier format is ${publisher}.${name}
+    // Example: vscode.csharp
+
+    // List of extensions that should be recommended for users of this workspace
+    "recommendations": [
+        "leanprover.lean4"  // Extension for Lean 4 support
+    ],
+
+    // List of extensions recommended by VS Code that should not be recommended for users of this workspace
+    "unwantedRecommendations": [
+        "ms-vscode-remote.remote-containers"  // Remote Containers extension
+    ]
+}

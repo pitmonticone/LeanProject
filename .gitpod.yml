@@ -1,0 +1,19 @@
+# Specify the Docker image to use for the Gitpod workspace
+image:
+  # Path to the Dockerfile used to build the custom image
+  file: .docker/gitpod/Dockerfile
+
+# VS Code configuration settings
+vscode:
+  extensions:
+    # Extension for Lean 4 support
+    - leanprover.lean4
+
+# Define tasks to run in the Gitpod workspace
+tasks:
+  # Initial task to run when the workspace starts
+  - init: 
+      # Retrieve and cache dependencies using Lake (Lean's package manager)
+      lake exe cache get 
+      # Build the project and include the LeanSchool.Common package
+      lake build +LeanSchool.Common

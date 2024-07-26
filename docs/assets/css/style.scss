@@ -1,0 +1,20 @@
+---
+---
+
+/* Import the CSS from the specified theme */
+@import "{{ site.theme }}";
+
+/* Set a gradient background for the page header */
+.page-header {
+  background-image: linear-gradient(120deg, #09203F, #537895);
+}
+
+/* Set the color for all heading elements within the main content */
+.main-content h1,  /* Apply color to h1 headings */
+.main-content h2,  /* Apply color to h2 headings */
+.main-content h3,  /* Apply color to h3 headings */
+.main-content h4,  /* Apply color to h4 headings */
+.main-content h5,  /* Apply color to h5 headings */
+.main-content h6 { /* Apply color to h6 headings */
+  color: #09203F;  /* Set the color to a dark shade of blue */
+}

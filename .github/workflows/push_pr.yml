@@ -1,0 +1,60 @@
+# Trigger the workflow on pull request events
+on:
+  pull_request:
+
+jobs:
+  style_lint:
+    name: Lint style
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for long lines
+        if: always()
+        run: |
+          # Find Lean files with lines longer than 100 characters, excluding URLs
+          ! (find Project -name "*.lean" -type f -exec grep -E -H -n '^.{101,}$' {} \; | grep -v -E 'https?://')
+
+      - name: Don't 'import Mathlib', use precise imports
+        if: always()
+        run: |
+          # Ensure no file imports the entire Mathlib, promoting precise imports instead
+          ! (find Project -name "*.lean" -type f -print0 | xargs -0 grep -E -n '^import Mathlib$')
+
+  build_project:
+    runs-on: ubuntu-latest
+    name: Build project
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Fetch all history for all branches and tags
+
+      - name: Install elan
+        run: curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y --default-toolchain none
+
+      - name: Get cache
+        run: ~/.elan/bin/lake exe cache get
+
+      - name: Build project
+        run: ~/.elan/bin/lake build Project
+
+      - name: Build blueprint and copy to `docs/blueprint`
+        uses: xu-cheng/texlive-action@v2
+        with:
+          docker_image: ghcr.io/xu-cheng/texlive-full:20231201
+          run: |
+            # Install necessary dependencies and build the blueprint
+            export PIP_BREAK_SYSTEM_PACKAGES=1
+            apk update
+            apk add --update make py3-pip git pkgconfig graphviz graphviz-dev gcc musl-dev
+            git config --global --add safe.directory $GITHUB_WORKSPACE
+            git config --global --add safe.directory `pwd`
+            python3 -m venv env
+            source env/bin/activate
+            pip install --upgrade pip requests wheel
+            pip install pygraphviz --global-option=build_ext --global-option="-L/usr/lib/graphviz/" --global-option="-R/usr/lib/graphviz/"
+            pip install leanblueprint
+            leanblueprint pdf
+            leanblueprint web
+
+      - name: Check declarations
+        run: ~/.elan/bin/lake exe checkdecls blueprint/lean_decls

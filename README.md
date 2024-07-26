@@ -1,3 +1,3 @@
 # [LeanProject]
 
-Template repository for blueprint-driven Lean 4 projects.
+Template repository for blueprint-based Lean 4 projects.

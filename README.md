@@ -52,8 +52,6 @@ The template repository is organized as follows (listing the main folders and fi
 and environment.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) should provide the guidelines for contributing to the
 project.
-- [`lake-manifest.json`](lake-manifest.json) is the manifest file for the Lake build system,
-detailing dependencies and project metadata.
 - [`lakefile.lean`](lakefile.lean) is the configuration file for the Lake build system used in
 Lean projects.
 - [`lean-toolchain`](lean-toolchain) specifies the Lean version and toolchain used for the project.

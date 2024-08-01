@@ -72,12 +72,6 @@ project code.
 - [`Project.lean`](Project.lean): Rename the main file and the imports
 to match your actual project name.
 
-After making these changes, run the following command to update the project configuration and get started:
-
-```bash
-lake update
-```
-
 ## Blueprint
 
 ### 0. Selected Real-World Collaborative Projects

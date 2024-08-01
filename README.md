@@ -48,7 +48,6 @@ The template repository is organized as follows (listing the main folders and fi
     - [`Example.lean`](Project/Example.lean) is a sample Lean file.
 - [`scripts`](scripts) contains scripts to update Mathlib ensuring that the latest version is fetched and integrated into the development environment.
 - [`.gitignore`](.gitignore) specifies files and folders to be ignored by Git.
-- [`.gitpod.yml`](.gitpod.yml) is the configuration file for Gitpod, defining workspace setup
 and environment.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) should provide the guidelines for contributing to the
 project.

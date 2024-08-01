@@ -140,24 +140,20 @@ Respond affirmatively with `y` to the following prompt:
 Proceed with blueprint creation? [y/n]
 ```
 
-Respond negatively with `n` to the following prompt:
+Respond affirmatively with `y` to the following prompt:
 
 ```console
 Modify lakefile and lake-manifest to allow checking declarations exist? [y/n] (y)
 ```
 
-since it is already in the template [here](/lakefile.lean#L15).
-
-Respond negatively with `n` to the following prompt:
+Respond affirmatively with `y` to the following prompt:
 
 ```console
 Modify lakefile and lake-manifest to allow building the documentation? [y/n] (y):
 ```
 
-since it is already in the template [here](/lakefile.lean#L21-L23).
-
-
-Respond affirmatively with `y` to the following prompt:
+If you want to generate a Jekyll-based home page for the project, respond
+affirmatively with `y` to the following prompt:
 
 ```console
 Do you want to create a home page for the project, with links to the blueprint, the API documentation and the repository? [y/n]:

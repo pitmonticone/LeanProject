@@ -35,7 +35,6 @@ The template repository is organized as follows (listing the main folders and fi
     - [`workflows`](.github/workflows) contains GitHub Actions workflow files.
         - [`lint.yml`](.github/workflows/lint.yml) is the style lint workflow triggered on push
         and pull request events.
-        - [`pr.yml`](.github/workflows/pr.yml) is the workflow triggered on pull request events.
     - [`dependabot.yml`](.github/dependabot.yml) is the configuration file to automate dependency
     updates.
 - [`.vscode`](.vscode) contains Visual Studio Code configuration files
@@ -62,10 +61,6 @@ To tailor this template to your specific project, you need to:
 
 - [`lint.yml`](.github/workflows/lint.yml): Find and replace `Project` with your actual
 project name.
-- [`pr.yml`](.github/workflows/pr.yml):
-    - Find and replace `Project` with your actual project name.
-    - Select the default branch of your project repository (e.g. `main` or `master`) to
-    enable the workflow triggered on pull requests targeting it
 - [`Project`](Project): Rename the folder to match your actual project name.
 - [`Project/Example.lean`](Project/Example.lean): Remove it and replace it with your actual
 project code.

@@ -60,6 +60,8 @@ Lean projects.
 
 To tailor this template to your specific project, you need to:
 
+- [`lint.yml`](.github/workflows/lint.yml): Find and replace `Project` with your actual
+project name.
 - [`pr.yml`](.github/workflows/pr.yml):
     - Find and replace `Project` with your actual project name.
     - Select the default branch of your project repository (e.g. `main` or `master`) to

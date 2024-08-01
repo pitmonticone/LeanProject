@@ -1,15 +1,9 @@
 ## macOS
 .DS_Store
-## Lake 
+## Lake
 .lake/*
 .cache/*
-.devenv/*
-.stfolder/*
-/lakefile.olean
-/lake-packages/*
-/build
-## Blueprint 
-/blueprint/lean_decls
+## Blueprint
 /blueprint/print/print.log
 /blueprint/web/
 /blueprint/src/web.paux
@@ -42,4 +36,3 @@ docs/_includes/sorries.md
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
-

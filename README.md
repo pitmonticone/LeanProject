@@ -35,7 +35,7 @@ The template repository is organized as follows (listing the main folders and fi
     - [`workflows`](.github/workflows) contains GitHub Actions workflow files.
         - [`lint.yml`](.github/workflows/lint.yml) is the style lint workflow triggered on push
         and pull request events.
-    - [`dependabot.yml`](.github/dependabot.yml) is the configuration file to automate dependency
+    - [`dependabot.yml`](.github/dependabot.yml) is the configuration file to automate CI dependency
     updates.
 - [`.vscode`](.vscode) contains Visual Studio Code configuration files
     - [`extensions.json`](.vscode/extensions.json) recommends VS Code extensions for the project.
@@ -46,6 +46,7 @@ The template repository is organized as follows (listing the main folders and fi
     - [`ForMathlib`](Project/ForMathlib) should contain `.lean` files with new declarations to
     be upstreamed to Mathlib.
     - [`Example.lean`](Project/Example.lean) is a sample Lean file.
+- [`scripts`](scripts) contains scripts to update Mathlib ensuring that the latest version is fetched and integrated into the development environment.
 - [`.gitignore`](.gitignore) specifies files and folders to be ignored by Git.
 - [`.gitpod.yml`](.gitpod.yml) is the configuration file for Gitpod, defining workspace setup
 and environment.

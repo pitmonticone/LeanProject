@@ -173,3 +173,6 @@ Configure continuous integration to compile blueprint? [y/n] (y):
 
 For more details about the LeanBlueprint package and its commands, please refer to its
 [documentation](https://github.com/PatrickMassot/leanblueprint/tree/master#starting-a-blueprint).
+
+After configuring the blueprint, please wait for the GitHub Action workflow to finish.
+You can keep track of the progress in the **Actions** tab of your repository.

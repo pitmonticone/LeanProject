@@ -51,7 +51,7 @@ The template repository is organized as follows (listing the main folders and fi
 and environment.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) should provide the guidelines for contributing to the
 project.
-- [`lakefile.lean`](lakefile.lean) is the configuration file for the Lake build system used in
+- [`lakefile.toml`](lakefile.toml) is the configuration file for the Lake build system used in
 Lean projects.
 - [`lean-toolchain`](lean-toolchain) specifies the Lean version and toolchain used for the project.
 
@@ -65,7 +65,7 @@ project name.
 - [`Project/Example.lean`](Project/Example.lean): Remove it and replace it with your actual
 project code.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md): Customise the guidelines for contributing to the project.
-- [`lakefile.lean`](lakefile.lean): Find and replace `Project` with your actual project name.
+- [`lakefile.toml`](lakefile.toml): Find and replace `Project` with your actual project name.
 - [`Project.lean`](Project.lean): Rename the main file and the imports
 to match your actual project name.
 

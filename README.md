@@ -165,13 +165,3 @@ Configure continuous integration to compile blueprint? [y/n] (y):
 
 For more details about the LeanBlueprint package and its commands, please refer to its
 [documentation](https://github.com/PatrickMassot/leanblueprint/tree/master#starting-a-blueprint).
-
-## Video
-
-The video recording of my tutorial talk, presented to one of our [working groups](https://www.mathematics.uni-bonn.de/him/programs/current-trimester-program/him-trimester-program-prospects-of-formal-mathematics#wrks3) at the Hausdorff Research Institute for Mathematics in Bonn.
-
-This talk was designed for mathematicians at all levels, from students to professors, from enthusiasts to professional researchers. It aimed to provide a comprehensive introduction to the design, management, and implementation of blueprint-driven formalisation projects in Lean, with almost no prerequisite knowledge of Git, GitHub, continuous integration systems, and other technical tools.
-
-You can watch the video [here](https://youtu.be/KyuyTsLgkMY). All relevant references are available in the video description.
-
-[![HIM 2024 Tutorial Talk](https://i.ytimg.com/vi/hB8Vrwkwax0/maxresdefault.jpg)](https://www.youtube.com/watch?v=hB8Vrwkwax0)

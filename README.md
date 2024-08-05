@@ -4,7 +4,7 @@
 
 This repository contains a template for blueprint-driven formalization projects in Lean 4.
 
-## Video Tutorial
+## Tutorial Talk Video
 
 This is the video recording of the tutorial talk I presented at the Hausdorff Research Institute for Mathematics ([HIM](https://www.mathematics.uni-bonn.de/him)) in Bonn.
 

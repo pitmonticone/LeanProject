@@ -6,7 +6,7 @@ This repository contains a template for blueprint-driven formalization projects 
 
 ## Video Tutorial
 
-This is the video recording of the tutorial talk I have presented at the Hausdorff Research Institute for Mathematics in Bonn.
+This is the video recording of the tutorial talk I presented at the Hausdorff Research Institute for Mathematics ([HIM](https://www.mathematics.uni-bonn.de/him)) in Bonn.
 
 It was designed for mathematicians at all levels to provide a comprehensive introduction to the design, management, and implementation of blueprint-driven formalisation projects in Lean, with almost no prerequisite knowledge of Git, GitHub, continuous integration systems, and other technical tools.
 

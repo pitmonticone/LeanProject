@@ -11,7 +11,7 @@ the [Lean installation guide](https://leanprover-community.github.io/get_started
 
 ## Use this Template
 
-To create a new repository using this template, ensure you are on the correct repository page ([LeanProject](https://github.com/pitmonticone/LeanProject)). Then follow these steps:
+To create a new repository using this template, ensure you are on the correct repository page ([LeanProject](https://github.com/pitmonticone/LeanProject)) and then follow these steps:
 
 1. Click the **Use this template** button located at the top right of the repository page.
 2. Click the **Create a new repository** button.

@@ -11,7 +11,7 @@ the [Lean installation guide](https://leanprover-community.github.io/get_started
 
 ## Use this Template
 
-To create a new repository using this template, follow these steps:
+To create a new repository using this template, ensure you are on the correct repository page ([LeanProject](https://github.com/pitmonticone/LeanProject)). Then follow these steps:
 
 1. Click the **Use this template** button located at the top right of the repository page.
 2. Click the **Create a new repository** button.
@@ -23,9 +23,12 @@ repository, and click the **Create repository** button.
 To set up GitHub Pages for your repository, follow these steps:
 
 1. Go to the **Settings** tab of your repository.
-2. Scroll down to the **Pages** section.
+2. In the left sidebar, click on the **Pages** section.
 3. In the **Source** dropdown, select `GitHub Actions`.
-4. Click **Save**.
+
+## Clone this Repository
+
+To clone this repository to your local machine, please refer to the relevant section of the GitHub documentation [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
 ## Repository Layout
 
@@ -162,3 +165,13 @@ Configure continuous integration to compile blueprint? [y/n] (y):
 
 For more details about the LeanBlueprint package and its commands, please refer to its
 [documentation](https://github.com/PatrickMassot/leanblueprint/tree/master#starting-a-blueprint).
+
+## Video
+
+The video recording of my tutorial talk, presented to one of our [working groups](https://www.mathematics.uni-bonn.de/him/programs/current-trimester-program/him-trimester-program-prospects-of-formal-mathematics#wrks3) at the Hausdorff Research Institute for Mathematics in Bonn.
+
+This talk was designed for mathematicians at all levels, from students to professors, from enthusiasts to professional researchers. It aimed to provide a comprehensive introduction to the design, management, and implementation of blueprint-driven formalisation projects in Lean, with almost no prerequisite knowledge of Git, GitHub, continuous integration systems, and other technical tools.
+
+You can watch the video [here](https://youtu.be/KyuyTsLgkMY). All relevant references are available in the video description.
+
+[![HIM 2024 Tutorial Talk](https://i.ytimg.com/vi/hB8Vrwkwax0/maxresdefault.jpg)](https://www.youtube.com/watch?v=hB8Vrwkwax0)

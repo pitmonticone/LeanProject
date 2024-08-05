@@ -176,3 +176,13 @@ For more details about the LeanBlueprint package and its commands, please refer 
 
 After configuring the blueprint, please wait for the GitHub Action workflow to finish.
 You can keep track of the progress in the **Actions** tab of your repository.
+
+## Projects Using this Template
+
+- [Infinity Cosmos](https://github.com/emilyriehl/infinity-cosmos) led by
+[Emily Riehl](https://github.com/emilyriehl).
+- [Exponent Database](https://github.com/teorth/expdb) led by
+[Terence Tao](https://github.com/teorth)
+- [Groupoid Model of Homotopy Type Theory](https://github.com/sinhp/GroupoidModelofHoTTinLean4)
+led by [Sina Hazratpour](https://github.com/sinhp)
+- [Soundness of FRI](https://github.com/BoltonBailey/FRISoundness) led by [Bolton Bailey](https://github.com/BoltonBailey)

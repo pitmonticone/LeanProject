@@ -68,15 +68,19 @@ Lean projects.
 
 ## Customize this Template
 
-To tailor this template to your specific project, you need to:
+To tailor this template to your specific project, follow these steps:
 
-- [`lint.yml`](.github/workflows/lint.yml): Find and replace `Project` with your actual
-project name.
-- [`Project`](Project): Rename the folder to match your actual project name.
-- [`CONTRIBUTING.md`](CONTRIBUTING.md): Customise the guidelines for contributing to the project.
-- [`lakefile.toml`](lakefile.toml): Find and replace `Project` with your actual project name.
-- [`Project.lean`](Project.lean): Rename the main file and the imports
-to match your actual project name.
+1. Ensure your terminal is in the project directory by running the following command:
+    ```bash
+    cd path/to/your/project
+    ```
+2.	Execute the customization script by running:
+    ```bash
+    python3 customize_template.py NewProjectName
+    ```
+    where `NewProjectName` must be replaced by the name of your project.
+
+The script [`customize_template.py`](customize_template.py) will automatically rename the project folder and update the necessary files and configurations to match the new project name.
 
 ## Blueprint
 

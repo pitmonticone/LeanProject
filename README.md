@@ -73,8 +73,6 @@ To tailor this template to your specific project, you need to:
 - [`lint.yml`](.github/workflows/lint.yml): Find and replace `Project` with your actual
 project name.
 - [`Project`](Project): Rename the folder to match your actual project name.
-- [`Project/Example.lean`](Project/Example.lean): Remove it and replace it with your actual
-project code.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md): Customise the guidelines for contributing to the project.
 - [`lakefile.toml`](lakefile.toml): Find and replace `Project` with your actual project name.
 - [`Project.lean`](Project.lean): Rename the main file and the imports

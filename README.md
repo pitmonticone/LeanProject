@@ -80,7 +80,7 @@ To tailor this template to your specific project, follow these steps:
     ```
     where `NewProject` must be replaced by the name of your project.
 
-The script [`customize_template.py`](customize_template.py) will automatically rename the project folder and update the necessary files and configurations to match the new project name.
+The script [`customize_template.py`](scripts/customize_template.py) will automatically rename the project folder and update the necessary files and configurations to match the new project name.
 
 ## Blueprint
 

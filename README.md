@@ -76,9 +76,9 @@ To tailor this template to your specific project, follow these steps:
     ```
 2.	Execute the customization script by running:
     ```bash
-    python3 customize_template.py NewProjectName
+    python3 scripts/customize_template.py NewProject
     ```
-    where `NewProjectName` must be replaced by the name of your project.
+    where `NewProject` must be replaced by the name of your project.
 
 The script [`customize_template.py`](customize_template.py) will automatically rename the project folder and update the necessary files and configurations to match the new project name.
 

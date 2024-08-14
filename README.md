@@ -183,7 +183,7 @@ You can keep track of the progress in the **Actions** tab of your repository.
 
 - [Infinity Cosmos](https://github.com/emilyriehl/infinity-cosmos) led by
 [Emily Riehl](https://github.com/emilyriehl).
-- [Exponent Database](https://github.com/teorth/expdb) led by
+- [Analytic Number Theory Exponent Database](https://github.com/teorth/expdb) led by
 [Terence Tao](https://github.com/teorth)
 - [Groupoid Model of Homotopy Type Theory](https://github.com/sinhp/GroupoidModelofHoTTinLean4)
 led by [Sina Hazratpour](https://github.com/sinhp)

@@ -188,3 +188,4 @@ You can keep track of the progress in the **Actions** tab of your repository.
 - [Groupoid Model of Homotopy Type Theory](https://github.com/sinhp/GroupoidModelofHoTTinLean4)
 led by [Sina Hazratpour](https://github.com/sinhp)
 - [Soundness of FRI](https://github.com/BoltonBailey/FRISoundness) led by [Bolton Bailey](https://github.com/BoltonBailey)
+- [Weil's Converse Theorem](https://github.com/CBirkbeck/WeilConverse) led by [Chris Birkbeck](https://github.com/CBirkbeck)

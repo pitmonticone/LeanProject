@@ -103,12 +103,15 @@ project folder and update the necessary files and configurations to match the ne
 
 ### 0. Selected Real-World Collaborative Projects
 
-- [Fermat's Last Theorem for Exponent 3](https://pitmonticone.github.io/FLT3/)
-- [Polynomial Freiman-Ruzsa Conjecture](https://github.com/teorth/pfr)
-- [Fermat's Last Theorem](https://imperialcollegelondon.github.io/FLT/)
-- [Carleson Operators on Doubling Metric Measure Spaces](http://florisvandoorn.com/carleson/)
-- [Bonn Collaborative Formalization Seminar Series in Analysis](https://github.com/fpvandoorn/BonnAnalysis)
-- [Prime Number Theorem and More](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd)
+- [Fermat's Last Theorem for Exponent 3](https://pitmonticone.github.io/FLT3/) led by Riccardo Brasca.
+- [Polynomial Freiman-Ruzsa Conjecture](https://github.com/teorth/pfr) led by Terence Tao.
+- [Fermat's Last Theorem](https://imperialcollegelondon.github.io/FLT/) led by Kevin Buzzard.
+- [Carleson Operators on Doubling Metric Measure Spaces](http://florisvandoorn.com/carleson/) led by Floris van Doorn.
+- [Bonn Collaborative Formalization Seminar Series in Analysis](https://github.com/fpvandoorn/BonnAnalysis) led by Floris van Doorn.
+- [Prime Number Theorem and More](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd) led by Alex Kontorovich.
+- [Infinity Cosmos](https://github.com/emilyriehl/infinity-cosmos) led by Emily Riehl.
+- [Analytic Number Theory Exponent Database](https://github.com/teorth/expdb) led by Terence Tao.
+- [Groupoid Model of Homotopy Type Theory](https://github.com/sinhp/GroupoidModelofHoTTinLean4) led by Sina Hazratpour.
 
 For more examples of completed and ongoing Lean projects and libraries, please
 see the [Lean Reservoir](https://reservoir.lean-lang.org).
@@ -186,9 +189,9 @@ You can keep track of the progress in the **Actions** tab of your repository.
 - [Infinity Cosmos](https://github.com/emilyriehl/infinity-cosmos) led by
 [Emily Riehl](https://github.com/emilyriehl).
 - [Analytic Number Theory Exponent Database](https://github.com/teorth/expdb) led by
-[Terence Tao](https://github.com/teorth)
+[Terence Tao](https://github.com/teorth).
 - [Groupoid Model of Homotopy Type Theory](https://github.com/sinhp/GroupoidModelofHoTTinLean4)
-led by [Sina Hazratpour](https://github.com/sinhp)
-- [Soundness of FRI](https://github.com/BoltonBailey/FRISoundness) led by [Bolton Bailey](https://github.com/BoltonBailey)
-- [Weil's Converse Theorem](https://github.com/CBirkbeck/WeilConverse) led by [Chris Birkbeck](https://github.com/CBirkbeck)
-- [Proofs from THE BOOK](https://github.com/mo271/FormalBookDummy) led by [Moritz Firsching](https://github.com/mo271)
+led by [Sina Hazratpour](https://github.com/sinhp).
+- [Soundness of FRI](https://github.com/BoltonBailey/FRISoundness) led by [Bolton Bailey](https://github.com/BoltonBailey).
+- [Weil's Converse Theorem](https://github.com/CBirkbeck/WeilConverse) led by [Chris Birkbeck](https://github.com/CBirkbeck).
+- [Proofs from THE BOOK](https://github.com/mo271/FormalBookDummy) led by [Moritz Firsching](https://github.com/mo271).

@@ -6,9 +6,12 @@ This repository contains a template for blueprint-driven formalization projects 
 
 ## Tutorial Talk Video
 
-This is the video recording of the tutorial talk I presented at the Hausdorff Research Institute for Mathematics ([HIM](https://www.mathematics.uni-bonn.de/him)) in Bonn.
+This is the video recording of the tutorial talk I presented at the Hausdorff Research Institute for
+Mathematics ([HIM](https://www.mathematics.uni-bonn.de/him)) in Bonn.
 
-It was designed for mathematicians at all levels to provide a comprehensive introduction to the design, management, and implementation of blueprint-driven formalisation projects in Lean, with almost no prerequisite knowledge of Git, GitHub, continuous integration systems, and other technical tools.
+It was designed for mathematicians at all levels to provide a comprehensive introduction to the design,
+management, and implementation of blueprint-driven formalisation projects in Lean, with almost no
+prerequisite knowledge of Git, GitHub, continuous integration systems, and other technical tools.
 
 [![HIM 2024 Tutorial Talk](https://img.youtube.com/vi/KyuyTsLgkMY/maxresdefault.jpg)](https://youtu.be/KyuyTsLgkMY)
 
@@ -19,7 +22,8 @@ the [Lean installation guide](https://leanprover-community.github.io/get_started
 
 ## Use this Template
 
-To create a new repository using this template, ensure you are on the correct repository page ([LeanProject](https://github.com/pitmonticone/LeanProject)) and then follow these steps:
+To create a new repository using this template, ensure you are on the correct repository page
+([LeanProject](https://github.com/pitmonticone/LeanProject)) and then follow these steps:
 
 1. Click the **Use this template** button located at the top right of the repository page.
 2. Click the **Create a new repository** button.
@@ -36,7 +40,8 @@ To set up GitHub Pages for your repository, follow these steps:
 
 ## Clone this Repository
 
-To clone this repository to your local machine, please refer to the relevant section of the GitHub documentation [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+To clone this repository to your local machine, please refer to the relevant section of the
+GitHub documentation [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
 ## Repository Layout
 
@@ -57,7 +62,8 @@ The template repository is organized as follows (listing the main folders and fi
     - [`ForMathlib`](Project/ForMathlib) should contain `.lean` files with new declarations to
     be upstreamed to Mathlib.
     - [`Example.lean`](Project/Example.lean) is a sample Lean file.
-- [`scripts`](scripts) contains scripts to update Mathlib ensuring that the latest version is fetched and integrated into the development environment.
+- [`scripts`](scripts) contains scripts to update Mathlib ensuring that the latest version is
+fetched and integrated into the development environment.
 - [`.gitignore`](.gitignore) specifies files and folders to be ignored by Git.
 and environment.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) should provide the guidelines for contributing to the
@@ -70,17 +76,28 @@ Lean projects.
 
 To tailor this template to your specific project, follow these steps:
 
+1. If you don't have a Python environment, you can install one by following the instructions in the
+[Python installation guide](https://www.python.org/downloads/).
+1. Verify your Python installation by running:
+    ```bash
+    python3 --version
+    ```
+1. Verify your Pip installation by running:
+    ```bash
+    pip3 --version
+    ```
 1. Ensure your terminal is in the project directory by running the following command:
     ```bash
     cd path/to/your/project
     ```
-2.	Execute the customization script by running:
+1.	Execute the customization script by running:
     ```bash
     python3 scripts/customize_template.py NewProject
     ```
     where `NewProject` must be replaced by the name of your project.
 
-The script [`customize_template.py`](scripts/customize_template.py) will automatically rename the project folder and update the necessary files and configurations to match the new project name.
+The script [`customize_template.py`](scripts/customize_template.py) will automatically rename the
+project folder and update the necessary files and configurations to match the new project name.
 
 ## Blueprint
 
@@ -97,21 +114,6 @@ For more examples of completed and ongoing Lean projects and libraries, please
 see the [Lean Reservoir](https://reservoir.lean-lang.org).
 
 ### 1. Install Dependencies
-
-Verify your Python installation by running:
-
-```bash
-python3 --version
-```
-
-and your Pip installation by running:
-
-```bash
-pip3 --version
-```
-
-If you don't have a Python environment, you can install one by following the instructions in the
-[Python installation guide](https://www.python.org/downloads/).
 
 To install the necessary dependencies, follow the instructions in the
 [PyGraphViz installation guide](https://pygraphviz.github.io/documentation/stable/install.html).

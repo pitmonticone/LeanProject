@@ -191,5 +191,5 @@ You can keep track of the progress in the **Actions** tab of your repository.
 - [Groupoid Model of Homotopy Type Theory](https://github.com/sinhp/GroupoidModelofHoTTinLean4) led by Sina Hazratpour.
 - [Soundness of FRI](https://github.com/BoltonBailey/FRISoundness) led by Bolton Bailey.
 - [Weil's Converse Theorem](https://github.com/CBirkbeck/WeilConverse) led by Chris Birkbeck.
-- [Proofs from THE BOOK](https://github.com/mo271/FormalBook) led by Moritz Firsching.
+- [Proofs from THE BOOK](https://github.com/mo271/formal_book) led by Moritz Firsching.
 - [Automata Theory](https://github.com/shetzl/autth) led by Stefan Hetzl.

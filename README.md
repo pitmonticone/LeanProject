@@ -189,6 +189,7 @@ You can keep track of the progress in the **Actions** tab of your repository.
 
 - [Infinity Cosmos](https://github.com/emilyriehl/infinity-cosmos) led by Emily Riehl.
 - [Analytic Number Theory Exponent Database](https://github.com/teorth/expdb) led by Terence Tao.
+- [Equational Theories](https://github.com/teorth/equational_theories) led by Terence Tao.
 - [Groupoid Model of Homotopy Type Theory](https://github.com/sinhp/GroupoidModelofHoTTinLean4) led by Sina Hazratpour.
 - [Soundness of FRI](https://github.com/BoltonBailey/FRISoundness) led by Bolton Bailey.
 - [Weil's Converse Theorem](https://github.com/CBirkbeck/WeilConverse) led by Chris Birkbeck.

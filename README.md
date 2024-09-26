@@ -51,6 +51,7 @@ The template repository is organized as follows (listing the main folders and fi
     - [`workflows`](.github/workflows) contains GitHub Actions workflow files.
         - [`lint.yml`](.github/workflows/lint.yml) is the style lint workflow triggered on push
         and pull request events.
+        - [`update.yml`](.github/workflows/update.yml) is the dependency update workflow triggered manually by default.
     - [`dependabot.yml`](.github/dependabot.yml) is the configuration file to automate CI dependency
     updates.
 - [`.vscode`](.vscode) contains Visual Studio Code configuration files

@@ -113,6 +113,7 @@ project folder and update the necessary files and configurations to match the ne
 - [Infinity Cosmos](https://github.com/emilyriehl/infinity-cosmos) led by Emily Riehl.
 - [Analytic Number Theory Exponent Database](https://github.com/teorth/expdb) led by Terence Tao.
 - [Groupoid Model of Homotopy Type Theory](https://github.com/sinhp/GroupoidModelofHoTTinLean4) led by Sina Hazratpour.
+- [Equational Theories](https://github.com/teorth/equational_theories) led by Terence Tao.
 
 For more examples of completed and ongoing Lean projects and libraries, please
 see the [Lean Reservoir](https://reservoir.lean-lang.org).

@@ -93,7 +93,7 @@ To tailor this template to your specific project, follow these steps:
     ```
 1.	Execute the customization script by running:
     ```bash
-    python3 scripts/customize_template.py NewProject
+    scripts/customize_template.py NewProject
     ```
     where `NewProject` must be replaced by the name of your project.
 

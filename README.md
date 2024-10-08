@@ -67,6 +67,7 @@ The template repository is organized as follows (listing the main folders and fi
 fetched and integrated into the development environment.
 - [`.gitignore`](.gitignore) specifies files and folders to be ignored by Git.
 and environment.
+- [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) should contain the code of conduct for the project.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) should provide the guidelines for contributing to the
 project.
 - [`lakefile.toml`](lakefile.toml) is the configuration file for the Lake build system used in

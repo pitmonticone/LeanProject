@@ -50,7 +50,6 @@ def main(project_name):
         project_name (str): The name of the new project.
     """
     # Define paths to the files and directories to be modified
-    lint_yml_path = '.github/workflows/lint.yml'
     project_folder = 'Project'
     example_file = os.path.join(project_folder, 'Example.lean')
     contributing_md = 'CONTRIBUTING.md'
@@ -58,7 +57,6 @@ def main(project_name):
     project_lean = 'Project.lean'
 
     # Replace 'Project' with the actual project name in the necessary files
-    replace_text_in_file(lint_yml_path, 'Project', project_name)
     replace_text_in_file(lakefile_toml, 'Project', project_name)
 
     # Rename 'Project' folder to match the project name

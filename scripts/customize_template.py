@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 
+"""
+This script provides functions to customize the project template by replacing text in files,
+renaming directories, and performing other necessary setup steps.
+"""
+
 import os
-import shutil
 import sys
 
 def replace_text_in_file(filepath, old_text, new_text):
@@ -51,7 +55,6 @@ def main(project_name):
     """
     # Define paths to the files and directories to be modified
     project_folder = 'Project'
-    example_file = os.path.join(project_folder, 'Example.lean')
     contributing_md = 'CONTRIBUTING.md'
     lakefile_toml = 'lakefile.toml'
     project_lean = 'Project.lean'

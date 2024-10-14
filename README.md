@@ -50,6 +50,7 @@ The template repository is organized as follows (listing the main folders and fi
 - [`.github`](.github) contains GitHub-specific configuration files and workflows.
     - [`workflows`](.github/workflows) contains GitHub Actions workflow files.
         - [`update.yml`](.github/workflows/update.yml) is the dependency update workflow triggered manually by default.
+        [It's not documented yet, but it will be soon.]
     - [`dependabot.yml`](.github/dependabot.yml) is the configuration file to automate CI dependency
     updates.
 - [`.vscode`](.vscode) contains Visual Studio Code configuration files

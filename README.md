@@ -103,16 +103,16 @@ project folder and update the necessary files and configurations to match the ne
 
 ### 0. Selected Real-World Collaborative Projects
 
-- [Fermat's Last Theorem for Exponent 3](https://pitmonticone.github.io/FLT3/) led by Riccardo Brasca.
-- [Polynomial Freiman-Ruzsa Conjecture](https://github.com/teorth/pfr) led by Terence Tao.
-- [Fermat's Last Theorem](https://imperialcollegelondon.github.io/FLT/) led by Kevin Buzzard.
-- [Carleson Operators on Doubling Metric Measure Spaces](http://florisvandoorn.com/carleson/) led by Floris van Doorn.
-- [Bonn Collaborative Formalization Seminar Series in Analysis](https://github.com/fpvandoorn/BonnAnalysis) led by Floris van Doorn.
-- [Prime Number Theorem and More](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd) led by Alex Kontorovich.
-- [Infinity Cosmos](https://github.com/emilyriehl/infinity-cosmos) led by Emily Riehl.
-- [Analytic Number Theory Exponent Database](https://github.com/teorth/expdb) led by Terence Tao.
-- [Groupoid Model of Homotopy Type Theory](https://github.com/sinhp/GroupoidModelofHoTTinLean4) led by Sina Hazratpour.
-- [Equational Theories](https://github.com/teorth/equational_theories) led by Terence Tao.
+- [Fermat's Last Theorem for Exponent 3](https://pitmonticone.github.io/FLT3/) by Riccardo Brasca et al.
+- [Polynomial Freiman-Ruzsa Conjecture](https://github.com/teorth/pfr) by Terence Tao et al.
+- [Fermat's Last Theorem](https://imperialcollegelondon.github.io/FLT/) by Kevin Buzzard et al.
+- [Carleson Operators on Doubling Metric Measure Spaces](http://florisvandoorn.com/carleson/) by Floris van Doorn et al.
+- [Bonn Collaborative Formalization Seminar Series in Analysis](https://github.com/fpvandoorn/BonnAnalysis) by Floris van Doorn et al.
+- [Prime Number Theorem and More](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd) by Alex Kontorovich et al.
+- [Infinity Cosmos](https://github.com/emilyriehl/infinity-cosmos) by Emily Riehl et al.
+- [Analytic Number Theory Exponent Database](https://github.com/teorth/expdb) by Terence Tao et al.
+- [Groupoid Model of Homotopy Type Theory](https://github.com/sinhp/GroupoidModelofHoTTinLean4) by Sina Hazratpour et al.
+- [Equational Theories](https://github.com/teorth/equational_theories) by Terence Tao et al.
 
 For more examples of completed and ongoing Lean projects and libraries, please
 see the [Lean Reservoir](https://reservoir.lean-lang.org).
@@ -187,11 +187,12 @@ You can keep track of the progress in the **Actions** tab of your repository.
 
 ## Selected Projects Using this Template
 
-- [Infinity Cosmos](https://github.com/emilyriehl/infinity-cosmos) led by Emily Riehl.
-- [Analytic Number Theory Exponent Database](https://github.com/teorth/expdb) led by Terence Tao.
+- [Infinity Cosmos](https://github.com/emilyriehl/infinity-cosmos) by Emily Riehl et al.
+- [Analytic Number Theory Exponent Database](https://github.com/teorth/expdb) by Terence Tao et al.
 - [Equational Theories](https://github.com/teorth/equational_theories) led by Terence Tao.
-- [Groupoid Model of Homotopy Type Theory](https://github.com/sinhp/GroupoidModelofHoTTinLean4) led by Sina Hazratpour.
-- [Soundness of FRI](https://github.com/BoltonBailey/FRISoundness) led by Bolton Bailey.
-- [Weil's Converse Theorem](https://github.com/CBirkbeck/WeilConverse) led by Chris Birkbeck.
-- [Proofs from THE BOOK](https://github.com/mo271/FormalBook) led by Moritz Firsching.
-- [Automata Theory](https://github.com/shetzl/autth) led by Stefan Hetzl.
+- [Groupoid Model of Homotopy Type Theory](https://github.com/sinhp/GroupoidModelofHoTTinLean4) by Sina Hazratpour et al.
+- [Soundness of FRI](https://github.com/BoltonBailey/FRISoundness) by Bolton Bailey et al.
+- [Weil's Converse Theorem](https://github.com/CBirkbeck/WeilConverse) by Chris Birkbeck et al.
+- [Proofs from THE BOOK](https://github.com/mo271/FormalBook) by Moritz Firsching et al.
+- [Automata Theory](https://github.com/shetzl/autth) by Stefan Hetzl et al.
+- [Dirichlet Nonvanishing](https://github.com/CBirkbeck/DirichletNonvanishing) by Chris Birkbeck et al.

@@ -36,16 +36,6 @@ def rename_directory(old_name, new_name):
     if os.path.exists(old_name):
         os.rename(old_name, new_name)
 
-# def remove_file(filepath):
-#     """
-#     Remove the specified file.
-
-#     Arguments:
-#         filepath (str): The path to the file to be removed.
-#     """
-#     if os.path.exists(filepath):
-#         os.remove(filepath)
-
 def main(project_name):
     """
     Perform all the customization steps for the template.
@@ -58,9 +48,11 @@ def main(project_name):
     contributing_md = 'CONTRIBUTING.md'
     lakefile_toml = 'lakefile.toml'
     project_lean = 'Project.lean'
+    build_project_yml = '.github/workflows/build-project.yml'
 
     # Replace 'Project' with the actual project name in the necessary files
     replace_text_in_file(lakefile_toml, 'Project', project_name)
+    replace_text_in_file(build_project_yml, 'Project', project_name)
 
     # Rename 'Project' folder to match the project name
     rename_directory(project_folder, project_name)

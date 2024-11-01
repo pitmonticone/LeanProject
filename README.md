@@ -51,8 +51,8 @@ The template repository is organized as follows (listing the main folders and fi
     - [`workflows`](.github/workflows) contains GitHub Actions workflow files.
         - [`update-dependencies.yml`](.github/workflows/update-dependencies.yml) is the dependency update workflow to be triggered manually by default.
         [It's not documented yet, but it will be soon.]
-    - [`dependabot.yml`](.github/dependabot.yml) is the configuration file to automate CI dependency
-    updates.
+        - [`build-project.yml`](.github/workflows/build-project.yml) defines the workflow for building the Lean project on pushes, pull requests, and manual triggers.
+    - [`dependabot.yml`](.github/dependabot.yml) is the configuration file to automate CI dependency updates.
 - [`.vscode`](.vscode) contains Visual Studio Code configuration files
     - [`extensions.json`](.vscode/extensions.json) recommends VS Code extensions for the project.
     - [`settings.json`](.vscode/settings.json) defines the project-specific settings for VS Code.

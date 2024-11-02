@@ -9,8 +9,6 @@
 /blueprint/src/web.paux
 /blueprint/src/web.bbl
 /blueprint/print/
-## Docs
-docs/_includes/sorries.md
 ## TeX
 *.aux
 *.lof

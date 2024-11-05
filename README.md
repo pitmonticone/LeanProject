@@ -30,6 +30,38 @@ To create a new repository using this template, ensure you are on the correct re
 3. Select the account or organization where you want to create it, choose a name for the new
 repository, and click the **Create repository** button.
 
+## Clone this Repository
+
+To clone this repository to your local machine, please refer to the relevant section of the
+GitHub documentation [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+
+## Customize this Template
+
+To tailor this template to your specific project, follow these steps:
+
+1. If you don't have a Python environment, you can install one by following the instructions in the
+[Python installation guide](https://www.python.org/downloads/).
+1. Verify your Python installation by running:
+    ```bash
+    python3 --version
+    ```
+1. Verify your Pip installation by running:
+    ```bash
+    pip3 --version
+    ```
+1. Ensure your terminal is in the project directory by running the following command:
+    ```bash
+    cd path/to/your/project
+    ```
+1.	Execute the customization script by running:
+    ```bash
+    scripts/customize_template.py NewProject
+    ```
+    where `NewProject` must be replaced by the name of your project.
+
+The script [`customize_template.py`](scripts/customize_template.py) will automatically rename the
+project folder and update the necessary files and configurations to match the new project name.
+
 ## Configure GitHub Pages
 
 To set up GitHub Pages for your repository, follow these steps:
@@ -37,11 +69,6 @@ To set up GitHub Pages for your repository, follow these steps:
 1. Go to the **Settings** tab of your repository.
 2. In the left sidebar, click on the **Pages** section.
 3. In the **Source** dropdown, select `GitHub Actions`.
-
-## Clone this Repository
-
-To clone this repository to your local machine, please refer to the relevant section of the
-GitHub documentation [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
 ## Repository Layout
 
@@ -72,33 +99,6 @@ project.
 - [`lakefile.toml`](lakefile.toml) is the configuration file for the Lake build system used in
 Lean projects.
 - [`lean-toolchain`](lean-toolchain) specifies the Lean version and toolchain used for the project.
-
-## Customize this Template
-
-To tailor this template to your specific project, follow these steps:
-
-1. If you don't have a Python environment, you can install one by following the instructions in the
-[Python installation guide](https://www.python.org/downloads/).
-1. Verify your Python installation by running:
-    ```bash
-    python3 --version
-    ```
-1. Verify your Pip installation by running:
-    ```bash
-    pip3 --version
-    ```
-1. Ensure your terminal is in the project directory by running the following command:
-    ```bash
-    cd path/to/your/project
-    ```
-1.	Execute the customization script by running:
-    ```bash
-    scripts/customize_template.py NewProject
-    ```
-    where `NewProject` must be replaced by the name of your project.
-
-The script [`customize_template.py`](scripts/customize_template.py) will automatically rename the
-project folder and update the necessary files and configurations to match the new project name.
 
 ## Blueprint
 

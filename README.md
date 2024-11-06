@@ -199,3 +199,4 @@ If you have used this template to create your own Lean project and would like to
 - [Proofs from THE BOOK](https://github.com/mo271/FormalBook) by Moritz Firsching et al.
 - [Automata Theory](https://github.com/shetzl/autth) by Stefan Hetzl et al.
 - [Dirichlet Nonvanishing](https://github.com/CBirkbeck/DirichletNonvanishing) by Chris Birkbeck et al.
+- [Seymour's Decomposition Theorem](https://github.com/Ivan-Sergeyev/seymour) by Ivan Sergeyev et al.

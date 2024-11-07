@@ -18,6 +18,7 @@
     // Select read-only files
     "files.readonlyInclude": {
         "**/.elan/**": true,
-        "**/.lake/**": true}
+        "**/.lake/**": true
+    }
 
 }

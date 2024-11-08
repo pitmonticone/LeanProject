@@ -53,7 +53,7 @@ jobs:
         with:
           script: |
             const tagName = process.env.tag_name;
-            const releaseName = `Release ${tagName}`;
+            const releaseName = `${tagName}`;
             await github.rest.repos.createRelease({
               owner: context.repo.owner,
               repo: context.repo.repo,

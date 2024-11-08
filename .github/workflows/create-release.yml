@@ -47,10 +47,19 @@ jobs:
 
       - name: Create GitHub Release
         if: env.CHANGED == 'true'
-        uses: actions/create-release@v1
+        uses: actions/github-script@v6
+        env:
+            tag_name: ${{ env.tag_name }}
         with:
-          tag_name: ${{ env.tag_name }}
-          release_name: ${{ env.tag_name }}
-          body: "Automated release for Lean version ${{ env.tag_name }}"
-          draft: false
-          prerelease: false
+          script: |
+            const tagName = process.env.tag_name;
+            const releaseName = `Release ${tagName}`;
+            await github.rest.repos.createRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag_name: tagName,
+              name: releaseName,
+              body: `Automated release for Lean version ${tagName}`,
+              draft: false,
+              prerelease: false
+            });

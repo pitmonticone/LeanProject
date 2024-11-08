@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # Fetch the last two commits for comparison
 
       - name: Check if lean-toolchain has changed
         id: check_file_change
@@ -31,7 +33,7 @@ jobs:
         if: env.CHANGED == 'true'
         id: get_version
         run: |
-          # Extract the version from the lean-toolchain file
+          # Extract the version from the lean-toolchain file (everything after the colon)
           LEAN_VERSION=$(cut -d ':' -f2 < lean-toolchain | tr -d '[:space:]')
           echo "tag_name=${LEAN_VERSION}" >> $GITHUB_ENV
 

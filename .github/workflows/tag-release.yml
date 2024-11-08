@@ -50,6 +50,7 @@ jobs:
         uses: actions/github-script@v7
         env:
             tag_name: ${{ env.tag_name }}
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           script: |
             const tagName = process.env.tag_name;

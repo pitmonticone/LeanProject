@@ -49,10 +49,12 @@ def main(project_name):
     lakefile_toml = 'lakefile.toml'
     project_lean = 'Project.lean'
     build_project_yml = '.github/workflows/build-project.yml'
+    docbuild_lakefile_toml = 'docbuild/lakefile.toml'
 
     # Replace 'Project' with the actual project name in the necessary files
     replace_text_in_file(lakefile_toml, 'Project', project_name)
     replace_text_in_file(build_project_yml, 'Project', project_name)
+    replace_text_in_file(docbuild_lakefile_toml, 'Project', project_name)  # New replacement
 
     # Rename 'Project' folder to match the project name
     rename_directory(project_folder, project_name)

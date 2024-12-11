@@ -82,8 +82,7 @@ The template repository is organized as follows (listing the main folders and fi
         and can be manually disabled by clicking on the **Actions** tab, selecting **Build Project**
         in the left sidebar, then clicking the horizontal triple dots (⋯) on the right,
         and choosing **Disable workflow**.
-        - [`create-release.yml`](.github/workflows/tag-release.yml): defines the workflow for creating a
-        new Git tag and GitHub release when the `lean-toolchain` file is updated in the `main` branch.
+        - [`create-release.yml`](.github/workflows/create-release.yml): defines the workflow for creating a new Git tag and GitHub release when the `lean-toolchain` file is updated in the `main` branch. Ensure the following settings are configured under **Settings > Actions > General > Workflow permissions**: "Read and write permissions" and "Allow GitHub Actions to create and approve pull requests".
         - [`update-dependencies.yml`](.github/workflows/update-dependencies.yml) is the dependency
         update workflow to be triggered manually by default. [It's not documented yet, but it will be soon.]
     - [`dependabot.yml`](.github/dependabot.yml) is the configuration file to automate CI dependency updates.

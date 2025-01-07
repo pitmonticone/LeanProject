@@ -4,17 +4,6 @@
 
 This repository contains a template for blueprint-driven formalization projects in Lean 4.
 
-## Tutorial Talk Video
-
-This is the video recording of the tutorial talk I presented at the Hausdorff Research Institute for
-Mathematics ([HIM](https://www.mathematics.uni-bonn.de/him)) in Bonn.
-
-It was designed for mathematicians at all levels to provide a comprehensive introduction to the design,
-management, and implementation of blueprint-driven formalisation projects in Lean, with almost no
-prerequisite knowledge of Git, GitHub, continuous integration systems, and other technical tools.
-
-[![HIM 2024 Tutorial Talk](https://img.youtube.com/vi/KyuyTsLgkMY/maxresdefault.jpg)](https://youtu.be/KyuyTsLgkMY)
-
 ## Install Lean 4
 
 Ensure that you have a functioning Lean 4 installation. If you do not, please follow

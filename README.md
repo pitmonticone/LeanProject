@@ -187,7 +187,7 @@ You can keep track of the progress in the **Actions** tab of your repository.
 
 If you have used this template to create your own Lean project and would like to share it with the community, please consider opening a [PR](https://github.com/pitmonticone/LeanProject/pulls) to add your project to this list:
 
-- [Infinity Cosmos](https://github.com/emilyriehl/infinity-cosmos) by Emily Riehl.
+- [Infinity Cosmos](https://github.com/emilyriehl/infinity-cosmos) by Emily Riehl et al.
 - [Analytic Number Theory Exponent Database](https://github.com/teorth/expdb) by Terence Tao et al.
 - [Equational Theories](https://github.com/teorth/equational_theories) by Terence Tao et al.
 - [Groupoid Model of Homotopy Type Theory](https://github.com/sinhp/GroupoidModelofHoTTinLean4) by Sina Hazratpour et al.

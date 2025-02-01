@@ -1,6 +1,8 @@
 # Lean 4 Project Template
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-lightblue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Zulip : Topic](https://img.shields.io/badge/Zulip-Topic-%237E57C2.svg?logo=zulip&logoColor=white)](https://leanprover.zulipchat.com/#narrow/channel/113488-general/topic/Tutorial.3A.20Getting.20Started.20with.20Blueprint-Driven.20Projects)
+[![YouTube : Tutorial](https://img.shields.io/badge/YouTube-Tutorial-%23FF0000.svg?logo=youtube&logoColor=white)](https://youtu.be/KyuyTsLgkMY)
 
 This repository contains a template for blueprint-driven formalization projects in Lean 4.
 
@@ -187,7 +189,7 @@ If you have used this template to create your own Lean project and would like to
 
 - [Infinity Cosmos](https://github.com/emilyriehl/infinity-cosmos) by Emily Riehl et al.
 - [Analytic Number Theory Exponent Database](https://github.com/teorth/expdb) by Terence Tao et al.
-- [Equational Theories](https://github.com/teorth/equational_theories) led by Terence Tao.
+- [Equational Theories](https://github.com/teorth/equational_theories) by Terence Tao et al.
 - [Groupoid Model of Homotopy Type Theory](https://github.com/sinhp/GroupoidModelofHoTTinLean4) by Sina Hazratpour et al.
 - [Soundness of FRI](https://github.com/BoltonBailey/FRISoundness) by Bolton Bailey et al.
 - [Weil's Converse Theorem](https://github.com/CBirkbeck/WeilConverse) by Chris Birkbeck et al.

@@ -4,6 +4,14 @@
 
 This repository contains a template for blueprint-driven formalization projects in Lean 4.
 
+## Tutorial Talk Video
+
+This is the video recording of the tutorial talk I presented at the Hausdorff Research Institute for Mathematics ([HIM](https://www.mathematics.uni-bonn.de/him)) in Bonn.
+
+It was designed for mathematicians at all levels to provide a comprehensive introduction to the design, management, and implementation of blueprint-driven formalisation projects in Lean, with almost no prerequisite knowledge of Git, GitHub, continuous integration systems, and other technical tools.
+
+[![HIM 2024 Tutorial Talk](https://img.youtube.com/vi/KyuyTsLgkMY/maxresdefault.jpg)](https://youtu.be/KyuyTsLgkMY)
+
 ## Install Lean 4
 
 Ensure that you have a functioning Lean 4 installation. If you do not, please follow
@@ -185,9 +193,9 @@ You can keep track of the progress in the **Actions** tab of your repository.
 
 If you have used this template to create your own Lean project and would like to share it with the community, please consider opening a [PR](https://github.com/pitmonticone/LeanProject/pulls) to add your project to this list:
 
-- [Infinity Cosmos](https://github.com/emilyriehl/infinity-cosmos) by Emily Riehl et al.
+- [Infinity Cosmos](https://github.com/emilyriehl/infinity-cosmos) by Emily Riehl.
 - [Analytic Number Theory Exponent Database](https://github.com/teorth/expdb) by Terence Tao et al.
-- [Equational Theories](https://github.com/teorth/equational_theories) led by Terence Tao.
+- [Equational Theories](https://github.com/teorth/equational_theories) by Terence Tao et al.
 - [Groupoid Model of Homotopy Type Theory](https://github.com/sinhp/GroupoidModelofHoTTinLean4) by Sina Hazratpour et al.
 - [Soundness of FRI](https://github.com/BoltonBailey/FRISoundness) by Bolton Bailey et al.
 - [Weil's Converse Theorem](https://github.com/CBirkbeck/WeilConverse) by Chris Birkbeck et al.

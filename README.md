@@ -99,7 +99,7 @@ Lean projects.
 
 ## Blueprint
 
-### 0. Selected Real-World Collaborative Projects
+### 0. Selected Collaborative Projects
 
 - [Fermat's Last Theorem for Exponent 3](https://pitmonticone.github.io/FLT3/) by Riccardo Brasca et al.
 - [Polynomial Freiman-Ruzsa Conjecture](https://github.com/teorth/pfr) by Terence Tao et al.
@@ -197,3 +197,4 @@ If you have used this template to create your own Lean project and would like to
 - [Automata Theory](https://github.com/shetzl/autth) by Stefan Hetzl et al.
 - [Dirichlet Nonvanishing](https://github.com/CBirkbeck/DirichletNonvanishing) by Chris Birkbeck et al.
 - [Seymour's Decomposition Theorem](https://github.com/Ivan-Sergeyev/seymour) by Ivan Sergeyev et al.
+- [Spectral Theorem](https://github.com/oliver-butterley/SpectralThm) by Oliver Butterley and Yoh Tanimoto.

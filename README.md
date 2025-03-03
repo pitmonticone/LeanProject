@@ -81,10 +81,8 @@ The template repository is organized as follows (listing the main folders and fi
     - [`extensions.json`](.vscode/extensions.json) recommends VS Code extensions for the project.
     - [`settings.json`](.vscode/settings.json) defines the project-specific settings for VS Code.
 - [`Project`](Project) should contain the Lean code files.
-    - [`Mathlib`](Project/Mathlib) should contain `.lean` files with declarations missing from
-    existing Mathlib developments.
-    - [`ForMathlib`](Project/ForMathlib) should contain `.lean` files with new declarations to
-    be upstreamed to Mathlib.
+    - [`Mathlib`](Project/Mathlib) should contain `.lean` files with declarations missing from the
+    current version of Mathlib.
     - [`Example.lean`](Project/Example.lean) is a sample Lean file.
 - [`scripts`](scripts) contains scripts to update Mathlib ensuring that the latest version is
 fetched and integrated into the development environment.

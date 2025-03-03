@@ -1,3 +1,3 @@
 # Mathlib
 
-This folder contains `.lean` files with declarations missing from existing Mathlib developments.
+This folder contains `.lean` files with declarations missing from the current version of Mathlib.

@@ -47,6 +47,9 @@ jobs:
           use-github-cache: false
           use-mathlib-cache: true
 
+      - name: check that Project.lean is up to date
+        run: ~/.elan/bin/lake exe mk_all --check || echo "error: please ensure that Project.lean is up to date, for instance by running lake exe mk_all"
+
       - name: Cache build artifacts
         uses: actions/cache@v4
         with:

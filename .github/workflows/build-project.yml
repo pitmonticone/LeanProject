@@ -40,11 +40,12 @@ jobs:
         with:
           fetch-depth: 0 # Fetch all history for all branches and tags
 
-      - name: Install elan
-        run: curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y
-
-      - name: Get Mathlib cache
-        run: ~/.elan/bin/lake exe cache get || true
+      - name: Install and configure Lean, and get mathlib cache
+        uses: leanprover/lean-action@f3ad22e9ca29cb9475bc9bee9afd1f39bb52bf6d # v1.1.2
+        with:
+          auto-config: false
+          use-github-cache: false
+          use-mathlib-cache: true
 
       - name: Cache build artifacts
         uses: actions/cache@v4

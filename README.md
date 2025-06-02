@@ -197,3 +197,4 @@ If you have used this template to create your own Lean project and would like to
 - [Seymour's Decomposition Theorem](https://github.com/Ivan-Sergeyev/seymour) by Ivan Sergeyev et al.
 - [Spectral Theorem](https://github.com/oliver-butterley/SpectralThm) by Oliver Butterley and Yoh Tanimoto.
 - [NeuralNetworks](https://github.com/or4nge19/NeuralNetworks) by Matteo Cipollina.
+- [ABC Exceptions](https://github.com/b-mehta/ABC-Exceptions) by Bhavik Mehta et al.

@@ -32,7 +32,7 @@ jobs:
     steps:
       - name: Run the action
         id: update-the-repo
-        uses: leanprover-community/mathlib-update-action/do-update@e91d07ac5a7ce1980d200a591d2123449131496b # 2025-06-09
+        uses: leanprover-community/mathlib-update-action/do-update@14ac09f79193f0501345879e4da8304a0aee283b # 2025-06-12
         with:
           tag: ${{ matrix.tag }}
           # START CONFIGURATION BLOCK 2

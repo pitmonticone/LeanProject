@@ -109,6 +109,7 @@ Lean projects.
 - [Analytic Number Theory Exponent Database](https://github.com/teorth/expdb) by Terence Tao et al.
 - [Groupoid Model of Homotopy Type Theory](https://github.com/sinhp/GroupoidModelofHoTTinLean4) by Sina Hazratpour et al.
 - [Equational Theories](https://github.com/teorth/equational_theories) by Terence Tao et al.
+- [Sphere Packing in 8 Dimensions](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean) by Maryna Viazovska et al.
 
 For more examples of completed and ongoing Lean projects and libraries, please
 see the [Lean Reservoir](https://reservoir.lean-lang.org).
@@ -198,3 +199,4 @@ If you have used this template to create your own Lean project and would like to
 - [Spectral Theorem](https://github.com/oliver-butterley/SpectralThm) by Oliver Butterley and Yoh Tanimoto.
 - [NeuralNetworks](https://github.com/or4nge19/NeuralNetworks) by Matteo Cipollina.
 - [ABC Exceptions](https://github.com/b-mehta/ABC-Exceptions) by Bhavik Mehta et al.
+- [Sphere Packing in 8 Dimensions](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean) by Maryna Viazovska et al.

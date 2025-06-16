@@ -15,7 +15,7 @@ jobs:
       - name: Run the action
         id: check-for-updates
         # Beware, when copy-pasting, that this next line must not include `do-update`.
-        uses: leanprover-community/mathlib-update-action@14ac09f79193f0501345879e4da8304a0aee283b # 2025-06-12
+        uses: leanprover-community/mathlib-update-action@30121004826adb85f006e31ce5d25a33ce79c7a6 # 2025-06-16
         # START CONFIGURATION BLOCK 1
         # END CONFIGURATION BLOCK 1
   do-update: # Runs the upgrade, tests it, and makes a PR/issue/commit.
@@ -25,7 +25,7 @@ jobs:
       issues: write        # Grants permission to create or update issues
       pull-requests: write # Grants permission to create or update pull requests
     needs: check-for-updates
-    if: ${{ needs.check-for-updates.outputs.is-update-available }}
+    if: ${{ needs.check-for-updates.outputs.is-update-available == 'true' }}
     strategy: # Runs for each update discovered by the `check-for-updates` job.
       max-parallel: 1 # Ensures that the PRs/issues are created in order.
       matrix:
@@ -34,7 +34,7 @@ jobs:
       - name: Run the action
         id: update-the-repo
         # Beware, when copy-pasting, that this next line must include `do-update`.
-        uses: leanprover-community/mathlib-update-action/do-update@14ac09f79193f0501345879e4da8304a0aee283b # 2025-06-12
+        uses: leanprover-community/mathlib-update-action/do-update@30121004826adb85f006e31ce5d25a33ce79c7a6 # 2025-06-16
         with:
           tag: ${{ matrix.tag }}
           # START CONFIGURATION BLOCK 2

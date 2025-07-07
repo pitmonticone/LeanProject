@@ -49,6 +49,7 @@ def main(project_name):
     lakefile_toml = 'lakefile.toml'
     project_lean = 'Project.lean'
     build_project_yml = '.github/workflows/build-project.yml'
+    citation_bib = 'CITATION.bib'
 
     # Replace 'Project' with the actual project name in the necessary files
     replace_text_in_file(lakefile_toml, 'Project', project_name)
@@ -56,6 +57,10 @@ def main(project_name):
 
     # Rename 'Project' folder to match the project name
     rename_directory(project_folder, project_name)
+
+    # Delete CITATION.bib file
+    if os.path.exists(citation_bib):
+        os.remove(citation_bib)
 
     # Notify the user to customize 'CONTRIBUTING.md' manually
     print(f"Please customize {contributing_md} manually to set up the contribution guidelines for your project.")

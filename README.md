@@ -200,3 +200,4 @@ If you have used this template to create your own Lean project and would like to
 - [NeuralNetworks](https://github.com/or4nge19/NeuralNetworks) by Matteo Cipollina.
 - [ABC Exceptions](https://github.com/b-mehta/ABC-Exceptions) by Bhavik Mehta et al.
 - [Sphere Packing in 8 Dimensions](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean) by Maryna Viazovska et al.
+- [LeanBridge](https://github.com/CBirkbeck/LeanBridge) by Chris Birkbeck et al. 

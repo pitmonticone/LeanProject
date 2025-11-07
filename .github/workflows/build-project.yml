@@ -1,4 +1,4 @@
-name: Build Project
+name: Build FoAGiL
 
 on:
   push:
@@ -47,9 +47,9 @@ jobs:
           use-github-cache: false
           use-mathlib-cache: true
 
-      - name: "Check that Project.lean is up to date"
+      - name: "Check that FoAGiL.lean is up to date"
         run: |
-          ~/.elan/bin/lake exe mk_all --check || echo "ERROR: please ensure that Project.lean is up to date, for instance by running lake exe mk_all"
+          ~/.elan/bin/lake exe mk_all --check || echo "ERROR: please ensure that FoAGiL.lean is up to date, for instance by running lake exe mk_all"
 
       - name: Cache build artifacts
         uses: actions/cache@v4
@@ -59,4 +59,4 @@ jobs:
           restore-keys: LakeBuild-
 
       - name: Build project
-        run: ~/.elan/bin/lake build Project
+        run: ~/.elan/bin/lake build FoAGiL

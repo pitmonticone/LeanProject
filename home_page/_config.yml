@@ -20,7 +20,7 @@
 
 title: Foundation of Algebraic Geometry in Lean
 #email: your-email@example.com
-description: by Nguyen Nguyen and Chang Shu and Zicheng Yang and Hongyu Wang and Nantao Zhang
+description: by Jiaxi Liang and Nguyen Nguyen and Chang Shu and Zicheng Yang and Hongyu Wang and Nantao Zhang
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://WHY-Op109.github.io/FoAGiL" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
@@ -28,7 +28,7 @@ github_username: WHY-Op109
 repository: WHY-Op109/FoAGiL
 
 # Build settings
-remote_theme: pages-themes/cayman@v0.2.0 
+remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-remote-theme
   - jekyll-github-metadata

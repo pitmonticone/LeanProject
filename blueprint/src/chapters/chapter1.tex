@@ -1,8 +1,156 @@
 \chapter{Just enough category theory to be dangerous}
 
-\begin{exmaple}
+\begin{example}[Product of sets]
+  Let $M$ and $N$ be two sets. Define a product of $M$ and $N$ to be a triple, $\bra{P, \mu, \nu}$, where $P$ is a set, $\mu \colon P \to M$ and $\nu \colon P \to N$ are maps such that the following property hold
+  \[
+  \bra{\forall \text{ set } P'} \bra{\forall \mu' \colon P' \to M} \bra{\forall \nu' \colon P' \to N} \bra{\exists ! u \colon P' \to P} \colon \bra{\mu \circ u = \mu' \wedge \nu \circ u = \nu'}.
+  \]
 \end{example}
+\begin{remark}
+  \begin{itemize}
+    \item The above definition catch the essence of the Cartesian product of sets. Note that we did not define what $P$ is, nor what $\mu$ and $\nu$ are. Instead, we defined them through the satisfaction of some property. This is a common theme in category theory: objects are defined by their relationships to other objects, rather than by their internal structure.
+    \item However, there isn't just a unique product of $M$ and $N$, but any two products are set-theorically isomorphic (bijectively correspond to each other). This is a common theme in category theory: objects defined by universal properties are unique up to unique isomorphism.
+  \end{itemize}
+\end{remark}
+\begin{exercise}
+  Verify if we have two products of $M$ and $N$, namely $\bra{P_1, \mu_1, \nu_1}$ and $\bra{P_2, \mu_2, \nu_2}$, then there exists a unique isomorphism (bijective map) between $P_1$ and $P_2$ that makes the following diagram commute. (\textit{Hint: in sets, isomorphism is just bijection and bijection means there exists an inverse map. Use the universal property twice to construct the maps in both directions and then show they are inverses of each other.})
+\end{exercise}
+\begin{exercise}
+  Verify that the product of vector spaces (the Cartesian product equipped with component-wise addition and scalar multiplication) also satisfies the above definition of product. (\textit{Hint: similar as above, but remember the maps need to be linear maps now.})
+\end{exercise}
 
 \section{Categories and functors}
 
+\begin{definition}[Category]
+  Define a \textbf{category} $\cat{C}$ as a $4$-tuple $\bra{\cat{Obj}\bra{\cat{C}}, \cat{Mor}\bra{\cat{C}}, \mathrm{id}, \circ}$ where the following data is collected:
+  \begin{itemize}
+    \item $\cat{Obj}\bra{\cat{C}}$, a collection (class or set) of \textbf{objects} of the category.
+    \item $\cat{Mor}\bra{\cat{C}}$, a collection (class or set) of \textbf{morphisms} (or \textbf{arrows}) of the category.
+    \item For each pair of objects $X, Y \in \cat{Obj}\bra{\cat{C}}$, a collection of \textbf{morphisms} (or \textbf{arrows}), denoted $\cat{Hom}_{\cat{C}}(X, Y)$.
+    \item For each object $X$, an \textbf{identity morphism} $\cat{id}_X \in \cat{Hom}_{\cat{C}}(X, X)$.
+    \item For each triple of objects $X, Y, Z$, a \textbf{composition} operation
+    \begin{align*}
+    \circ \colon \cat{Hom}_{\cat{C}}(Y, Z) \times \cat{Hom}_{\cat{C}}(X, Y) & \to \cat{Hom}_{\cat{C}}(X, Z) \\
+     (g, f) & \mapsto g \circ f
+    \end{align*}
+  \end{itemize}
+  These data must satisfy the following axioms:
+  \begin{itemize}
+    \item \textit{Identity laws}: $\bra{\forall f \in \cat{Hom}_{\cat{C}}(X, Y)} \colon \cat{id}_Y \circ f = f \land f \circ \cat{id}_X = f$.
+    \item \textit{Associativity}: $\bra{\forall f \in \cat{Hom}_{\cat{C}}(X, Y)} \bra{\forall g \in \cat{Hom}_{\cat{C}}(Y, Z)} \bra{\forall h \in \cat{Hom}_{\cat{C}}(Z, W)} \colon (h \circ g) \circ f = h \circ (g \circ f)$.
+  \end{itemize}
+\end{definition}
 
+\begin{definition}[Isomorphism]
+  Let $\cat{C}$ be a category and $X, Y \in \cat{Obj}\bra{\cat{C}}$. Define an \textbf{isomorphism} from $X$ to $Y$ to be a morphism $f: X \to Y$ such that
+  \[
+  \bra{\exists! g: Y \to X} \colon g \circ f = \cat{id}_X \land f \circ g = \cat{id}_Y.
+  \]
+  and we denote this as $X \cong Y$.
+\end{definition}
+
+\begin{example}[The category of types]
+  $\cat{Type}$ is a category where
+  \begin{itemize}
+    \item $\cat{Obj}\bra{\cat{Type}} \dfs \bbra{\text{all types in Lean}}$.
+    \item $\cat{Mor}\bra{\cat{Type}} \dfs \bbra{\text{all functions between types in Lean}}$.
+    \item $\cat{Hom}_{\cat{Type}}(X, Y) \dfs \bbra{\text{all functions from } X \text{ to } Y}$.
+    \item Identity morphism: for each type $X$, the identity morphism $\cat{id}_X$ is the identity function on $X$.
+    \item Composition: for functions $f \colon X \to Y$ and $g \colon Y \to Z$, their composition $g \circ f \colon X \to Z$ is defined by $(g \circ f)(x) = g(f(x))$ for all $x \in X$.
+  \end{itemize}
+\end{example}
+
+\begin{example}
+  \begin{itemize}
+    \item $\cat{Set}$ is the category where the objects are sets and the morphisms are functions between sets.
+    \item $\cat{Vec}_k$ is the category where the objects are vector spaces over a field $k$ and the morphisms are linear maps between these vector spaces.
+    \item $\cat{Ab}$ is the category where the objects are abelian groups and the morphisms are homomorphisms of groups.
+    \item $\cat{Mod}_R$ is the category where the objects are modules over a commutative ring $R$ and the morphisms are homomorphisms of modules.
+    \item $\cat{Rings}$ is the category where the objects are rings and the morphisms are homomorphisms of rings.
+    \item $\cat{Top}$ is the category where the objects are topological spaces and the morphisms are continuous maps between these spaces.
+    \item Every partially ordered set $\bra{P, \leq}$ can be viewed as a category where the objects are the elements of $P$ and the morphisms are defined by the order relation: there is a morphism from $x$ to $y$ if and only if $x \leq y$.
+    \item The collection of subsets of a given set $S$ can be viewed as a category where the objects are the subsets of $S$ and there is a morphism is given by the inclusion relations. Similarly, the open subsets of a topological space form a category under inclusion. Actually, both of these two examples are special cases of the a partial order category.
+  \end{itemize}
+\end{example}
+
+\begin{exercise}[Groupid]
+  Define a \textbf{groupoid} as a category such that
+  \[
+  \bra{\forall f \in \cat{Mor}\bra{\cat{C}}} \colon f \text{ is an isomorphism}.
+  \]
+  \begin{enumerate}
+    \item Show that any group can be viewed as a groupoid with a single object.
+    \item Describe a groupoid that is not a group.
+  \end{enumerate}
+\end{exercise}
+
+\begin{exercise}[Automorphism group]
+  Let $\cat{C}$ be a category. Define the \textsf{automorphisms} on the category $\cat{C}$ as a map
+  \begin{align*}
+    \cat{Aut}_\cat{C} \colon \cat{Obj}\bra{\cat{C}} &\to \cat{Obj}\bra{\cat{Type}} \\
+    X &\mapsto \bbra{f: X \to X \mid f \text{ is an isomorphism}}.
+  \end{align*}
+  \begin{enumerate}
+    \item Show that this is well-defined, i.e., for each object $X$, the collection $\cat{Aut}_\cat{C}(X)$ is not empty.
+    \item Show that for each object $X$, the collection $\cat{Aut}_\cat{C}(X)$ forms a group under the composition operation.
+    \item Show that
+    \[
+    \bra{\forall A, B \in \cat{Obj}\bra{\cat{C}}} \colon A \cong B \rightarrow \cat{Aut}_{\cat{C}}(A) \cong \cat{Aut}_{\cat{C}}(B).
+    \]
+    \item What is the automorphisms group of the obejects in the category $\cat{Set}$ and $\cat{Vec}_k$?
+    \item (Optional, hard) Let $X$ be a topological space and $\Pi\bra{X}$ be its fundamental groupoid. Show that
+    \begin{enumerate}
+      \item $\bra{\forall x_0 \in X} \colon \cat{Aut}_{\Pi\bra{X}}(x_0) = \pi_1\bra{X, x_0}$, where $\pi_1\bra{X, x_0}$ is the fundamental group of $X$ based at $x_0$.
+      \begin{proof}
+      Take any $x_0 \in X$. The equality $\cat{Aut}_{\Pi\bra{X}}(x_0) = \pi_1\bra{X, x_0}$ follows directly from the definitions of the automorphism group in the fundamental groupoid and the fundamental group itself.
+      \end{proof}
+      \item If $\cat{G}$ is a connected-groupoid, then
+      \[
+      \bra{\forall x, y \in \cat{Obj}\bra{\cat{G}}} \colon \cat{Aut}_{\cat{G}}(x) \cong \cat{Aut}_{\cat{G}}(y).
+      \]
+      \begin{proof}
+        Assume $\cat{G}$ is a connected groupoid. Take any $x, y \in \cat{Obj}\bra{\cat{G}}$. We will construct an isomorphism between $\cat{Aut}_{\cat{G}}(x)$ and $\cat{Aut}_{\cat{G}}(y)$. Apply the connectedness of $\cat{G}$, $\cat{Hom}_{\cat{G}}(x, y)$ is non-empty. Choose any morphism $f: x \to y$. Since $\cat{G}$ is a groupoid, $f$ is an isomorphism, hence has an inverse $f^{-1}: y \to x$. Define a map $\Phi_f: G_x \to G_y$ by conjugation,
+        \begin{align*}
+        \varphi_f: \cat{Aut}_{\cat{G}}(x) &\to \cat{Aut}_{\cat{G}}(y) \\
+        g &\mapsto f \circ g \circ f^{-1}.
+        \end{align*}
+        Check that $\Phi_f$ is a well-defined. Suffice to show $\varphi_f$ is an isomorphism of groups.
+        \begin{itemize}
+          \item ($\varphi$ is a morphism of groups). Take any $g_1, g_2 \in \cat{Aut}_{\cat{G}}(x)$. Calculate
+          \begin{align*}
+            \varphi_f(g_1 \circ g_2) &= f \circ (g_1 \circ g_2) \circ f^{-1} \\
+            &= f \circ g_1 \circ g_2 \circ f^{-1} \\
+            &= (f \circ g_1 \circ f^{-1}) \circ (f \circ g_2 \circ f^{-1}) \\
+            &= \varphi_f(g_1) \circ \varphi_f(g_2)
+          \end{align*}
+          \item ($\varphi$ is a bijection). Let
+          \begin{align*}
+            \psi_f: \cat{Aut}_{\cat{G}}(y) &\to \cat{Aut}_{\cat{G}}(x) \\
+            h &\mapsto f^{-1} \circ h \circ f.
+          \end{align*}
+          Use $\psi_f$ to finish the proof,
+          \begin{itemize}
+          \item ($\psi_f \circ \varphi_f = \mathrm{id}_{\cat{Aut}_{\cat{G}}(x)}$). Take any $g \in \cat{Aut}_{\cat{G}}(x)$. Calculate
+          \begin{align*}
+            (\psi_f \circ \varphi_f)(g) &= \psi_f(\varphi_f(g)) \\
+            &= \psi_f(f \circ g \circ f^{-1}) \\
+            &= f^{-1} \circ (f \circ g \circ f^{-1}) \circ f \\
+            &= (f^{-1} \circ f) \circ g \circ (f^{-1} \circ f) \\
+            &= \mathrm{id}_x \circ g \circ \mathrm{id}_x \\
+            &= g
+          \end{align*}
+          \item ($\varphi_f \circ \psi_f = \mathrm{id}_{\cat{Aut}_{\cat{G}}(y)}$). Take any $h \in \cat{Aut}_{\cat{G}}(y)$. Calculate
+          \begin{align*}
+            (\varphi_f \circ \psi_f)(h) &= \varphi_f(\psi_f(h)) \\
+            &= \varphi_f(f^{-1} \circ h \circ f) \\
+            &= f \circ (f^{-1} \circ h \circ f) \circ f^{-1} \\
+            &= (f \circ f^{-1}) \circ h \circ (f \circ f^{-1}) \\
+            &= \mathrm{id}_y \circ h \circ \mathrm{id}_y \\
+            &= h
+          \end{align*}
+          \end{itemize}
+          \end{itemize}
+      \end{proof}
+    \end{enumerate}
+  \end{enumerate}
+\end{exercise}

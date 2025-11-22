@@ -66,7 +66,7 @@
     \item $\cat{Vec}_k$ is the category where the objects are vector spaces over a field $k$ and the morphisms are linear maps between these vector spaces.
     \item $\cat{Ab}$ is the category where the objects are abelian groups and the morphisms are homomorphisms of groups.
     \item $\cat{Mod}_R$ is the category where the objects are modules over a commutative ring $R$ and the morphisms are homomorphisms of modules.
-    \item $\cat{Rings}$ is the category where the objects are rings and the morphisms are homomorphisms of rings.
+    \item $\cat{Ring}$ is the category where the objects are rings and the morphisms are homomorphisms of rings.
     \item $\cat{Top}$ is the category where the objects are topological spaces and the morphisms are continuous maps between these spaces.
     \item Every partially ordered set $\bra{P, \leq}$ can be viewed as a category where the objects are the elements of $P$ and the morphisms are defined by the order relation: there is a morphism from $x$ to $y$ if and only if $x \leq y$.
     \item The collection of subsets of a given set $S$ can be viewed as a category where the objects are the subsets of $S$ and there is a morphism is given by the inclusion relations. Similarly, the open subsets of a topological space form a category under inclusion. Actually, both of these two examples are special cases of the a partial order category.
@@ -85,7 +85,7 @@
 \end{exercise}
 
 \begin{exercise}[Automorphism group]
-  Let $\cat{C}$ be a category. Define the \textsf{automorphisms} on the category $\cat{C}$ as a map
+  Let $\cat{C}$ be a category. Define the \textbf{automorphisms} on the category $\cat{C}$ as a map
   \begin{align*}
     \cat{Aut}_\cat{C} \colon \cat{Obj}\bra{\cat{C}} &\to \cat{Obj}\bra{\cat{Type}} \\
     X &\mapsto \bbra{f: X \to X \mid f \text{ is an isomorphism}}.
@@ -97,59 +97,15 @@
     \[
     \bra{\forall A, B \in \cat{Obj}\bra{\cat{C}}} \colon A \cong B \rightarrow \cat{Aut}_{\cat{C}}(A) \cong \cat{Aut}_{\cat{C}}(B).
     \]
-    \item What is the automorphisms group of the obejects in the category $\cat{Set}$ and $\cat{Vec}_k$?
-    \item (Optional, hard) Let $X$ be a topological space and $\Pi\bra{X}$ be its fundamental groupoid. Show that
+    \item What is the automorphisms group of the objects in the category $\cat{Set}$ and $\cat{Vec}_k$?
+    \item Let $X$ be a topological space and $\Pi\bra{X}$ be its fundamental groupoid. Show that
     \begin{enumerate}
       \item $\bra{\forall x_0 \in X} \colon \cat{Aut}_{\Pi\bra{X}}(x_0) = \pi_1\bra{X, x_0}$, where $\pi_1\bra{X, x_0}$ is the fundamental group of $X$ based at $x_0$.
-      % \begin{proof}
-      % Take any $x_0 \in X$. The equality $\cat{Aut}_{\Pi\bra{X}}(x_0) = \pi_1\bra{X, x_0}$ follows directly from the definitions of the automorphism group in the fundamental groupoid and the fundamental group itself.
-      % \end{proof}
       \item If $\cat{G}$ is a connected-groupoid, then
       \[
       \bra{\forall x, y \in \cat{Obj}\bra{\cat{G}}} \colon \cat{Aut}_{\cat{G}}(x) \cong \cat{Aut}_{\cat{G}}(y).
       \]
       \begin{proof}
-        % Assume $\cat{G}$ is a connected groupoid. Take any $x, y \in \cat{Obj}\bra{\cat{G}}$. We will construct an isomorphism between $\cat{Aut}_{\cat{G}}(x)$ and $\cat{Aut}_{\cat{G}}(y)$. Apply the connectedness of $\cat{G}$, $\cat{Hom}_{\cat{G}}(x, y)$ is non-empty. Choose any morphism $f: x \to y$. Since $\cat{G}$ is a groupoid, $f$ is an isomorphism, hence has an inverse $f^{-1}: y \to x$. Define a map $\Phi_f: G_x \to G_y$ by conjugation,
-        % \begin{align*}
-        % \varphi_f: \cat{Aut}_{\cat{G}}(x) &\to \cat{Aut}_{\cat{G}}(y) \\
-        % g &\mapsto f \circ g \circ f^{-1}.
-        % \end{align*}
-        % Check that $\Phi_f$ is a well-defined. Suffice to show $\varphi_f$ is an isomorphism of groups.
-        % \begin{itemize}
-        %   \item ($\varphi$ is a morphism of groups). Take any $g_1, g_2 \in \cat{Aut}_{\cat{G}}(x)$. Calculate
-        %   \begin{align*}
-        %     \varphi_f(g_1 \circ g_2) &= f \circ (g_1 \circ g_2) \circ f^{-1} \\
-        %     &= f \circ g_1 \circ g_2 \circ f^{-1} \\
-        %     &= (f \circ g_1 \circ f^{-1}) \circ (f \circ g_2 \circ f^{-1}) \\
-        %     &= \varphi_f(g_1) \circ \varphi_f(g_2)
-        %   \end{align*}
-        %   \item ($\varphi$ is a bijection). Let
-        %   \begin{align*}
-        %     \psi_f: \cat{Aut}_{\cat{G}}(y) &\to \cat{Aut}_{\cat{G}}(x) \\
-        %     h &\mapsto f^{-1} \circ h \circ f.
-        %   \end{align*}
-        %   Use $\psi_f$ to finish the proof,
-        %   \begin{itemize}
-        %   \item ($\psi_f \circ \varphi_f = \mathrm{id}_{\cat{Aut}_{\cat{G}}(x)}$). Take any $g \in \cat{Aut}_{\cat{G}}(x)$. Calculate
-        %   \begin{align*}
-        %     (\psi_f \circ \varphi_f)(g) &= \psi_f(\varphi_f(g)) \\
-        %     &= \psi_f(f \circ g \circ f^{-1}) \\
-        %     &= f^{-1} \circ (f \circ g \circ f^{-1}) \circ f \\
-        %     &= (f^{-1} \circ f) \circ g \circ (f^{-1} \circ f) \\
-        %     &= \mathrm{id}_x \circ g \circ \mathrm{id}_x \\
-        %     &= g
-        %   \end{align*}
-        %   \item ($\varphi_f \circ \psi_f = \mathrm{id}_{\cat{Aut}_{\cat{G}}(y)}$). Take any $h \in \cat{Aut}_{\cat{G}}(y)$. Calculate
-        %   \begin{align*}
-        %     (\varphi_f \circ \psi_f)(h) &= \varphi_f(\psi_f(h)) \\
-        %     &= \varphi_f(f^{-1} \circ h \circ f) \\
-        %     &= f \circ (f^{-1} \circ h \circ f) \circ f^{-1} \\
-        %     &= (f \circ f^{-1}) \circ h \circ (f \circ f^{-1}) \\
-        %     &= \mathrm{id}_y \circ h \circ \mathrm{id}_y \\
-        %     &= h
-        %   \end{align*}
-        %   \end{itemize}
-        %   \end{itemize}
       \end{proof}
     \end{enumerate}
   \end{enumerate}
